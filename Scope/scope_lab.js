@@ -28,6 +28,19 @@ function show() {
 
 show();
 
-console.log(functionVar); // Throws ReferenceError
-console.log(functionLet); // Throws ReferenceError
-console.log(functionConst); // Throws ReferenceError
+// console.log(functionVar); // Throws ReferenceError
+// console.log(functionLet); // Throws ReferenceError
+// console.log(functionConst); // Throws ReferenceError
+
+// Practice Task
+{
+    let msgLet = 'Message using let';
+    let msgConst = 'Message using const';
+    let msgVar = 'Message using var';
+
+    console.log(msgLet + ' witin the block scope')
+
+}
+console.log(msgLet + ' outside the Block Scope') 
+msgLet = 'Reassigning msgLet'
+console.log(msgLet + ' outside the Block Scope') 
