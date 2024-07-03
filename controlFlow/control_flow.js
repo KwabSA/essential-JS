@@ -11,7 +11,7 @@ if (userRole === 'admin') {
 
 console.log('Access Level: ', accessLevel)
 
-
+// Defining varaiables and nested if else statements
 let isLoggedIn = true;
 let userMessage;
 
@@ -52,3 +52,20 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? 'Authenticated' : 'Not Authenticated';
 
 console.log('Authentication Status: ', authenticationStatus);
+
+// Practice Test: Dietary Services Program Eligibility 
+let userStatus = 'Employee';
+let eligibility;
+
+if (userStatus === 'Employee') {
+    eligibility = "You're eligible to the Dietary Services";
+} else if (userStatus === 'Enrolled Member') {
+    eligibility = "You're eligible to Dietary Services and one-on-one interaction with a Dietician";
+} else if (userStatus === 'Subscriber') {
+    eligibility = "You're eligible to partial Dietary Services";
+} else {
+    eligibility = "Please subscribe to our Dietary Services for more";
+
+}
+
+console.log(`Hello ${userStatus}, ${eligibility}`);
