@@ -53,7 +53,7 @@ let authenticationStatus = isAuthenticated ? 'Authenticated' : 'Not Authenticate
 
 console.log('Authentication Status: ', authenticationStatus);
 
-// Practice Task: Dietary Services Program Eligibility 
+// Practice Task: Dietary Services Program Eligibility  
 let userStatus = 'Employee';
 let eligibility;
 
