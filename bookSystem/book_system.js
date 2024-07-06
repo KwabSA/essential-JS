@@ -33,7 +33,8 @@ const showBooks = () => {
     <p><strong> Book Name: </strong> ${book.name}</p>
     <p><strong> Author Name: </strong> ${book.author}</p>
     <p><strong> Book Description: </strong> ${book.description}</p>
-    <p><strong> No. of Pages: </strong> ${book.pages}</p>` 
+    <p><strong> No. of Pages: </strong> ${book.pages}</p>
+    <button onclick="editBook(${index})">Edit</button> <button onclick="deleteBook(${index})">Delete</button>` 
     );
 
     document.getElementById('books').innerHTML = booksDiv.join('');
@@ -45,4 +46,18 @@ const clearInputs = () => {
     document.getElementById('authorName').value = '';
     document.getElementById('bookDescription').value = '';
     document.getElementById('pageNumbers').value = '';
+}
+
+//  Delete  book
+const deleteBook = (index) => {
+    // const foundBook = 
+    const response = confirm('Are you sure you want to delete this book?');
+    if (response) {
+        books.splice(index, 1);
+        alert('Book deleted successfully!');
+        showBooks();
+    } else {
+        alert('Book NOT deleted');
+        showBooks();
+    }
 }
